@@ -1,0 +1,376 @@
+/* 1 :cài đặt chung */
+
+/* dùng lớp giả để cài đặt các thuộc tính css */
+:root{
+    --primary-color:#ee4d2d;
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --maubtn-color:#ff7337;
+    --navbar-height:34px;
+    --phantren-height:130px;
+    /* kích thước cho nav2 */
+    --navbar2-height:calc(var(--phantren-height) - var(--navbar-height));
+}
+/*(gọi tất cả) uplike những thuộc tính css lên tất cả phần tử html nhúng file base */
+*{
+ /* box-sizing: inherit; kế thừ các thẻ chứ có thuộc tính box-sizing:; */
+    box-sizing: inherit;
+}
+
+html{
+    /* dộ lớn củ chữ nên để ,100% 1rem bằng 16px */
+    font-size: 62.5%;
+    /* chiều cao các dòng chữ(khoảng cách các dòng) 1 rem bằng 10px khi front size bà 62.5%  nên 1.6rem bằng 16px */
+    line-height: 1.6rem;
+    /* gọi lại link font chữ nếu roboto bị lỗi dùng sans-serif */
+    font-family: 'Roboto', sans-serif;
+    /* html là thẻ lớn nhất nên box-sizing: inherit; kế thừ  box-sizing: border-box; */
+    box-sizing: border-box;
+}
+
+/* cài đặt hiển thị tối ưu trải nhiệm */
+.hienthi_pt{
+    /* kích thức tối đa 1200 nếu nhỏ hơn chạy max-width: 100%; */
+    min-width: 1000px;
+    max-width: 100%;
+    /* trên dưới bằng 0 trái pahir bằng auto từ động căn giữa */
+    margin: 0 auto;
+
+}
+.hienthi__full{
+    width: 100%;
+}
+.hienthi__ngang{
+    /* hiển thị trên 1 hàng ngang */
+   display: flex;
+    /* nếu tổng dộ dài các thành phần con vượt quá thì nhảy xuống dòng */
+    flex-wrap: wrap;
+    
+
+}
+ /* hiệu ứng chuyển đông animattion */
+ @keyframes hieuung{
+  /* bắt đầu */
+    from{
+        /* độ trong xuôt */
+        opacity: 0;
+
+   }
+   /* kết thúc */
+   to {
+    opacity: 1;
+
+   }
+ }
+        /* 1 :cài đặt chung */
+
+        /* dùng lớp giả để cài đặt các thuộc tính css */
+        :root{
+            --primary-color:#ff7337;
+            --white-color:#fff;
+            --black-color:#000;
+            --text-color:#333;
+            --maubtn-color:#ff7337;
+            --navbar-height:34px;
+            --phantren-height:130px;
+            /* kích thước cho nav2 */
+            --navbar2-height:calc(var(--phantren-height) - var(--navbar-height));
+        }
+        /*(gọi tất cả) uplike những thuộc tính css lên tất cả phần tử html nhúng file base */
+        *{
+        /* box-sizing: inherit; kế thừ các thẻ chứ có thuộc tính box-sizing:; */
+            box-sizing: inherit;
+        }
+
+        html{
+            /* dộ lớn củ chữ nên để ,100% 1rem bằng 16px */
+            font-size: 62.5%;
+            /* chiều cao các dòng chữ(khoảng cách các dòng) 1 rem bằng 10px khi front size bà 62.5%  nên 1.6rem bằng 16px */
+            line-height: 1.6rem;
+            /* gọi lại link font chữ nếu roboto bị lỗi dùng sans-serif */
+            font-family: 'Roboto', sans-serif;
+            /* html là thẻ lớn nhất nên box-sizing: inherit; kế thừ  box-sizing: border-box; */
+            box-sizing: border-box;
+        }
+
+        /* cài đặt hiển thị tối ưu trải nhiệm */
+        .hienthi{
+            /* kích thức tối đa 1200 nếu nhỏ hơn chạy max-width: 100%; */
+            width: 1200px;
+            max-width: 100%;
+            /* trên dưới bằng 0 trái pahir bằng auto từ động căn giữa */
+            margin: 0 auto;
+
+        }
+        .hienthi__full{
+            width: 100%;
+        }
+        .hienthi__ngang{
+            /* hiển thị trên 1 hàng ngang */
+            display: flex;
+            /* nếu tổng dộ dài các thành phần con vượt quá thì nhảy xuống dòng */
+            flex-wrap: wrap;
+            margin-left: -8px;
+            margin-right: -8px;
+
+            
+
+        }
+        .hienthi__column_2{
+            padding-left: 8px;
+            padding-right: 8px;
+            width: 16.6667%;
+         
+            
+        }
+        .hienthi__column_2-4{
+            padding-left: 8px;
+            padding-right: 8px;
+            width: 33.333%;
+
+        }
+        .hienthi__column_10{
+            padding-left: 8px;
+            padding-right: 8px;
+            width: 83.3333%;
+        }
+        /* menu ngang */
+        /* hiệu ứng chuyển đông animattion */
+        @keyframes hieuung{
+        /* bắt đầu */
+            from{
+                /* độ trong xuôt */
+                opacity: 0;
+
+        }
+        /* kết thúc */
+        to {
+            opacity: 1;
+
+        }
+        }
+
+        @keyframes hieuungtb{
+            from{
+                opacity: 0;
+                transform: scale(0);
+
+            }
+            to{
+                opacity: 1;
+                transform: scale(1);
+
+            }
+
+
+        }
+        /* dạng moda giao diện gọi chung của các from đăng ký đăng nhập
+        giao diện bật lên một ô được gọi là modal và làm mờ xung quanh hiện 
+        lên nội dung ở bên trong */
+        .modal{
+            /* độ lớn cả màn hình */
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+
+        }
+        /* cài làm mờ */
+        .modal__lammo{
+            /* dùng dê biết là lớp con của modal */
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* mền màu nhình xuyên thấu dùng rgba số 0.3 cuối cùng là độ mờ */
+            background-color:rgba(10, 10, 10, 0.3);
+            /* độ đưa lớp lên trên 
+            khi có các tàng đè nhau */
+            z-index: 1;
+        }
+        /* phần màu trắng nằm giữa modal */
+        .modal__body{
+            /* width: 300px;
+            height: 300px; */
+            background-color: #fff;
+            /* căn giữa vì có display: flex: ; ở lớp trên */
+            margin: auto;
+            /* đưa lớp lên trên ko bị làm mờ
+            nếu ko ko dùng đc
+            khi có các tàng đè nhau */
+            z-index: 2;
+            position: relative;
+            border-radius: 5px;
+
+        }
+
+        /* cài đặt kích thước button */
+        .btn{
+            min-width: 144px;
+            min-height: 36px;
+            /* cài viền */
+            /* border: 1px solid #2d2d2d; */
+            border-radius: 3px;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            background-color: #fff;
+            font-size: 1.4rem;
+            padding: 0;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+        .btn.btn--chinh{
+            background-color: var(--maubtn-color);
+            color: #fff;
+
+
+            
+        }
+ @keyframes hieuungtb{
+    from{
+        opacity: 0;
+        transform: scale(0);
+
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+
+    }
+
+
+ }
+ /* dạng moda giao diện gọi chung của các from đăng ký đăng nhập
+ giao diện bật lên một ô được gọi là modal và làm mờ xung quanh hiện 
+ lên nội dung ở bên trong */
+ .modal{
+    /* độ lớn cả màn hình */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+
+ }
+ /* cài làm mờ */
+ .modal__lammo{
+    /* dùng dê biết là lớp con của modal */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* mền màu nhình xuyên thấu dùng rgba số 0.3 cuối cùng là độ mờ */
+    background-color:rgba(10, 10, 10, 0.3);
+      /* độ đưa lớp lên trên 
+    khi có các tàng đè nhau */
+    z-index: 1;
+ }
+ /* phần màu trắng nằm giữa modal */
+ .modal__body{
+    /* width: 300px;
+    height: 300px; */
+    background-color: #fff;
+    /* căn giữa vì có display: flex: ; ở lớp trên */
+    margin: auto;
+    /* đưa lớp lên trên ko bị làm mờ
+    nếu ko ko dùng đc
+    khi có các tàng đè nhau */
+    z-index: 100000000000000000;
+    position: relative;
+    border-radius: 5px;
+
+ }
+
+ /* cài đặt kích thước button */
+ .btn{
+    min-width: 144px;
+    min-height: 36px;
+    /* cài viền */
+    /* border: 1px solid #2d2d2d; */
+    border-radius: 3px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-size: 1.4rem;
+    padding: 0;
+    cursor: pointer;
+ }
+ .btn:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+ }
+ .btn.btn--chinh{
+    background-color: var(--maubtn-color);
+    color: #fff;
+
+    
+ }
+ .select-input{
+    position: relative;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    cursor: pointer;
+    /* z-index: 1; */
+    box-shadow: 0 1px 1px #ccc;
+
+ }
+ .select-input__lable{
+    color: #555;
+    
+
+    
+ }
+ .select-input__icon{
+    color: #555;
+    font-size: 1.4rem;
+    position: relative;
+    top: 1px;
+    /* background-color: rgb(131 , 131, 131); */
+
+ }
+ .select-input:hover .select-input__list{
+    display: block;
+    
+ }
+ 
+ .select-input__list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 23px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 8px 16px;
+    list-style: none;
+    display: none;
+    z-index: 1;
+    box-shadow: 0 1px 2px #ccc;
+
+}
+.select-input__item{
+    padding: 8px 0;
+
+}
+.select-input__link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    display: block;
+    
+}
+.select-input__link:hover{
+    color: var(--maubtn-color);
+} 
+/* ---------------sản phẩm---------------l*/

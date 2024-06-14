@@ -1,0 +1,87 @@
+/* quản lý sản phẩm */
+#banggiay {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#banggiay th, #banggiay td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#banggiay th {
+    background-color: #333;
+    color: white;
+}
+
+#banggiay tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#banggiay tr:hover {
+    background-color: #ddd;
+}
+
+.action-button {
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.action-button:hover {
+    background-color: #2980b9;
+}
+/* Quản lý tài khoản */
+#taikhoan-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#taikhoan-table th, #taikhoan-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#taikhoan-table th {
+    background-color: #333;
+    color: white;
+}
+
+#taikhoan-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#taikhoan-table tr:hover {
+    background-color: #ddd;
+}
+
+.delete-button {
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+/* quản lý nhâp */

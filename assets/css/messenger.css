@@ -1,0 +1,102 @@
+
+.measenger{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    border-left: 5px solid;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+    min-width: 400px;
+    max-width: 450px;
+    /* animation: truot ease 0.3s ,modi linear 1s  3s forwards;
+    */
+    /* tất cả thay đổi trong 0.3 s */
+   transition: all linear 0.3s;
+}
+.measenger+.measenger{
+    margin-top: 24px;
+}
+.measenger__icon{
+    font-size: 24px;
+    margin: auto 8px;
+    
+    
+}
+.measenger__body{
+    flex-grow: 1;
+}
+.measenger__title{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+   
+}
+.measenger__msg{
+   
+    
+}
+.measenger__close{
+    margin: auto 18px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.measenger--thanhcong{
+    border-color: #1fb53f;
+}
+.measenger--thanhcong .measenger__icon{
+    color: #1fb53f;
+}
+.measenger--erro{
+    border-color: #d11c1c;
+}
+.measenger--erro .measenger__icon{
+    color: #b81c1c;
+}
+.measenger--loi{
+    border-color: #cee647;
+}
+.measenger--loi .measenger__icon{
+    color: #cee647;
+}
+#measenger{
+    position: fixed;
+    top: 32px;
+    right: 32px;
+}
+/* cài đặt vị trí duy chuyển của thông báo */
+@keyframes truot {
+    from{
+        transform: translateX(calc(120%));
+
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+@keyframes modi {
+    to{
+        opacity: 0;
+    }
+}
+
+/* ảnh tgdq */
+/* .anhdep{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #961f1f;
+    max-height: 555px;
+   min-height:145px;
+  
+} */
+.measenger__title{
+    width: 95%;
+    height:95%;
+    border-radius: 12px;
+    margin-left: 8px;
+    margin-top: 4.1px;
+    
+}
